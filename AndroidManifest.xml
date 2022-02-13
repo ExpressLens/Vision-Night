@@ -21,4 +21,7 @@
 
         <activity
                 android:name=".NightVisionActivity"
-            
+                android:launchMode="singleTask"
+                android:screenOrientation="sensorLandscape">
+
+            <in
