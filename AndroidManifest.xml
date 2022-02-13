@@ -11,4 +11,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:na
+    <uses-feature android:name="android.hardware.usb.host"
+            android:required="true" />
+
+    <uses-sdk android:targetSdkVersion=
