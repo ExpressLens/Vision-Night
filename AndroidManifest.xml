@@ -24,4 +24,6 @@
                 android:launchMode="singleTask"
                 android:screenOrientation="sensorLandscape">
 
-            <in
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category
