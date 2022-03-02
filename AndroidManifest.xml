@@ -35,4 +35,6 @@
         <service android:name="com.ford.openxc.webcam.WebcamManager"/>
         <service android:name="com.openxc.VehicleManager" />
 
-        <receiver android:name=".BootupReceiver"
+        <receiver android:name=".BootupReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_C
