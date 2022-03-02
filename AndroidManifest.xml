@@ -31,4 +31,6 @@
 
         </activity>
 
-        <service android:name=
+        <service android:name=".VehicleMonitoringService" />
+        <service android:name="com.ford.openxc.webcam.WebcamManager"/>
+        <ser
