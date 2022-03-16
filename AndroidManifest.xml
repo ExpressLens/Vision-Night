@@ -37,4 +37,7 @@
 
         <receiver android:name=".BootupReceiver" >
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_C
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <service android:name="com.openxc.VehicleManager" />
+            </intent-filter>
+    
