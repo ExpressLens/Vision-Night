@@ -9,4 +9,5 @@ developed the first version of this app as a summer intern at Ford in 2012. The
 application is tuned for rural night driving and doesn't cope well with city
 lights or daylight.
 
-**Disc
+**Disclaimer** This application is intended to be used with a display device
+that has a fixed, preferably permanent location
