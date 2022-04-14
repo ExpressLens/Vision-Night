@@ -4,4 +4,5 @@ Nighttime Forward Collision Warning with OpenXC
 This Nighttime Forward Collision Warning is an Android app that uses OpenXC and
 a standard USB webcam to add "night vision" to a car with off-the-shelf parts.
 The webcam faces forward from the dashboard and uses edge detection to detect
-objects on the road in the path of the 
+objects on the road in the path of the vehicle (i.e. deer). Samantha Skinger
+developed the first version of this app as a summer inte
