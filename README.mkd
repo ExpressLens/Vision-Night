@@ -24,4 +24,7 @@ visibility, the OpenXC platform does not make any claims of a safety benefit.
    can [access UVC video devices](#android-usb-webcam).
 * [USB Webcam][] supporting UVC and a 640x480 resolution in the YUYV format.
 * [OpenXC Vehicle
-   Interface](https://openxcplatform.com/vehicle-interf
+   Interface](https://openxcplatform.com/vehicle-interface/index.html) (VI) with
+   vehicle-specific firmware
+* [OpenXC-supported
+   vehicle](http://openxcplatform.com/vehicle
