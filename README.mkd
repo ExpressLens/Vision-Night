@@ -46,4 +46,6 @@ solution that can improve detection distance.
 ## Installation instructions
 
 1. Install the [OpenXC
-   Enabler](http://openxcplatform.com/getting-started/library-insta
+   Enabler](http://openxcplatform.com/getting-started/library-installation.html#enabler)
+   to the device.
+1. Run `ndk-build` in the `android-webcam` project folder to compile th
