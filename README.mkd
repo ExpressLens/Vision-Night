@@ -51,4 +51,6 @@ solution that can improve detection distance.
 1. Run `ndk-build` in the `android-webcam` project folder to compile the native
    camera library.
 1. Run `ndk-build` in the `nightvision` project folder to compile the native
-   
+   nightvision extensions.
+1. Install the `NightVisionActivity` application to the device.
+1. Start the app once, then r
