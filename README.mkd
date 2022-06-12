@@ -27,4 +27,7 @@ visibility, the OpenXC platform does not make any claims of a safety benefit.
    Interface](https://openxcplatform.com/vehicle-interface/index.html) (VI) with
    vehicle-specific firmware
 * [OpenXC-supported
-   vehicle](http://openxcplatform.com/vehicle
+   vehicle](http://openxcplatform.com/vehicle-interface/output-format.html)
+* USB hub (if you will be using the VI over USB in addition to the camera)
+
+This applicatio
