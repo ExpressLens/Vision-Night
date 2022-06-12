@@ -30,4 +30,5 @@ visibility, the OpenXC platform does not make any claims of a safety benefit.
    vehicle](http://openxcplatform.com/vehicle-interface/output-format.html)
 * USB hub (if you will be using the VI over USB in addition to the camera)
 
-This applicatio
+This application was tested with a webcam with the infrared filter removed and
+with IR illuminators on the front of the car. The visibilit
