@@ -43,4 +43,7 @@ solution that can improve detection distance.
 * [Android NDK](http://developer.android.com/tools/sdk/ndk/index.html)
 * [Android Webcam library](https://github.com/openxc/android-webcam)
 
-## 
+## Installation instructions
+
+1. Install the [OpenXC
+   Enabler](http://openxcplatform.com/getting-started/library-insta
