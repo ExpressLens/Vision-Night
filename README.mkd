@@ -38,4 +38,6 @@ solution that can improve detection distance.
 **Software**
 
 * [OpenXC Android
-  Library](http://openxcplatform.com/getting-started/librar
+  Library](http://openxcplatform.com/getting-started/library-installation.html)
+* [Android SDK](http://developer.android.com/sdk/index.html)
+* [Android NDK](http://develop
