@@ -33,4 +33,9 @@ visibility, the OpenXC platform does not make any claims of a safety benefit.
 This application was tested with a webcam with the infrared filter removed and
 with IR illuminators on the front of the car. The visibility was not any greater
 than with headlights alone, but there may still be a workable passive IR
-solution that 
+solution that can improve detection distance.
+
+**Software**
+
+* [OpenXC Android
+  Library](http://openxcplatform.com/getting-started/librar
