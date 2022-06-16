@@ -55,3 +55,5 @@ solution that can improve detection distance.
 1. Install the `NightVisionActivity` application to the device.
 1. Start the app once, then restart device to make sure the
    `VehicleMonitoringService` service is properly registered to begin at bootup
+   and start monitoring the gear position.
+1. Mount the Android device where it will be secure and visible
