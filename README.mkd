@@ -56,4 +56,6 @@ solution that can improve detection distance.
 1. Start the app once, then restart device to make sure the
    `VehicleMonitoringService` service is properly registered to begin at bootup
    and start monitoring the gear position.
-1. Mount the Android device where it will be secure and visible
+1. Mount the Android device where it will be secure and visible to the driver
+   when backing up, but not in the way of normal driving.
+1. Mount the USB webcam on dashboard or windsh
