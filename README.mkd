@@ -58,4 +58,6 @@ solution that can improve detection distance.
    and start monitoring the gear position.
 1. Mount the Android device where it will be secure and visible to the driver
    when backing up, but not in the way of normal driving.
-1. Mount the USB webcam on dashboard or windsh
+1. Mount the USB webcam on dashboard or windshield and plug into the Android
+   device. We recommend using velcro and attaching the camera to the back of the
+   rearvi
