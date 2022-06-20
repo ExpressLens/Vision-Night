@@ -64,4 +64,9 @@ solution that can improve detection distance.
 1. Assuming the VI is attached to the OBD-II port, connect the tablet to it via
    USB or Bluetooth.
 
-**With Maven:
+**With Maven:**
+
+Follow the directions to install the [Android Webcam
+library](https://github.com/openxc/android-webcam), then:
+
+    $ cd ni
