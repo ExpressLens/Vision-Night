@@ -69,4 +69,9 @@ solution that can improve detection distance.
 Follow the directions to install the [Android Webcam
 library](https://github.com/openxc/android-webcam), then:
 
-    $ cd ni
+    $ cd nightvision
+    $ ndk-build && mvn package android:deploy android:run
+
+## Functionality
+
+The app continuously re
