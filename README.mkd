@@ -78,4 +78,5 @@ The app continuously reads vehicle data from the VI and watches for changes in
 `headlamp_status` to determine if the nighttime warning should be activated.
 
 When enabled, the feed from the webcam is passed first to an implementation of
-the Sobe
+the Sobel edge detection algorithm. The detection focuses on 50% of the display
+area around the center, since this is where the
