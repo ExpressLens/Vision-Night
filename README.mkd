@@ -79,4 +79,8 @@ The app continuously reads vehicle data from the VI and watches for changes in
 
 When enabled, the feed from the webcam is passed first to an implementation of
 the Sobel edge detection algorithm. The detection focuses on 50% of the display
-area around the center, since this is where the
+area around the center, since this is where the horizon of the road will be
+while driving.
+
+Once the edges are detected, a rudimentary object detection algorithm finds
+clusters o
