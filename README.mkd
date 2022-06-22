@@ -74,4 +74,5 @@ library](https://github.com/openxc/android-webcam), then:
 
 ## Functionality
 
-The app continuously re
+The app continuously reads vehicle data from the VI and watches for changes in
+`headlamp_status` to determine if the nighttime warning s
