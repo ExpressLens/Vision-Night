@@ -83,4 +83,5 @@ area around the center, since this is where the horizon of the road will be
 while driving.
 
 Once the edges are detected, a rudimentary object detection algorithm finds
-clusters o
+clusters of edges that indicate an object on the road ahead. If an object is
+detected, it will be highlighted on the display and an a
