@@ -9,4 +9,6 @@ uint8_t rgbToGrayscale(argb* pixel) {
 jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
         JNIEnv* env, jobject thiz, jobject edgeBitmap, jobject overlayBitmap) {
     AndroidBitmapInfo edgeInfo;
-    int 
+    int result;
+    if((result = AndroidBitmap_getInfo(env, edgeBitmap, &edgeInfo)) < 0) {
+        LOGE("AndroidBitmap_getInfo() fa
