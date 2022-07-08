@@ -16,4 +16,7 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
     }
 
     AndroidBitmapInfo overlayInfo;
-    if((result = AndroidBitmap_getInfo(env, ove
+    if((result = AndroidBitmap_getInfo(env, overlayBitmap, &overlayInfo)) < 0) {
+        LOGE("AndroidBitmap_getInfo() failed, error=%d", result);
+        return false;
+    }
