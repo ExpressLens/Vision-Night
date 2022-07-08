@@ -84,4 +84,11 @@ while driving.
 
 Once the edges are detected, a rudimentary object detection algorithm finds
 clusters of edges that indicate an object on the road ahead. If an object is
-detected, it will be highlighted on the display and an a
+detected, it will be highlighted on the display and an alert will sound.
+
+## License
+
+Copyright (c) 2012-2013 Ford Motor Company
+Licensed under the BSD license.
+
+[USB web
