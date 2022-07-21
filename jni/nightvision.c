@@ -23,4 +23,9 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
 
     uint8_t* edgePixels;
     if((result = AndroidBitmap_lockPixels(env, edgeBitmap,
-                    (void*)&ed
+                    (void*)&edgePixels)) < 0) {
+        LOGE("AndroidBitmap_lockPixels() failed, error=%d", result);
+        return false;
+    }
+
+    uint8_t* o
