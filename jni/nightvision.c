@@ -20,3 +20,7 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
         LOGE("AndroidBitmap_getInfo() failed, error=%d", result);
         return false;
     }
+
+    uint8_t* edgePixels;
+    if((result = AndroidBitmap_lockPixels(env, edgeBitmap,
+                    (void*)&ed
