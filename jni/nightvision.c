@@ -37,4 +37,6 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
     }
 
     bool objectDetected = false;
-    for(int y = edgeInfo.h
+    for(int y = edgeInfo.height * DETECTION_WINDOW_SIZE;
+            y < edgeInfo.height * (1 - DETECTION_WINDOW_SIZE);
+            y += (OBJECT_DETECT
