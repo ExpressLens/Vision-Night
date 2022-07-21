@@ -42,4 +42,7 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
             y += (OBJECT_DETECT_BLOCK_SIZE_Y / 2)) {
 
         uint8_t* edgeLine = edgePixels + edgeInfo.stride * y;
-        uint8_t* overlayLine = overlayPixels + 
+        uint8_t* overlayLine = overlayPixels + overlayInfo.stride * y;
+
+        for(int x = edgeInfo.width * DETECTION_WINDOW_SIZE;
+                x < edgeInfo.
