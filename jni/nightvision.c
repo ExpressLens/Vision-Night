@@ -32,4 +32,9 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
     if((result = AndroidBitmap_lockPixels(env, overlayBitmap,
                     (void*)&overlayPixels)) < 0) {
         LOGE("AndroidBitmap_lockPixels() failed, error=%d", result);
-        AndroidBitmap_unlockPixels
+        AndroidBitmap_unlockPixels(env, edgeBitmap);
+        return false;
+    }
+
+    bool objectDetected = false;
+    for(int y = edgeInfo.h
