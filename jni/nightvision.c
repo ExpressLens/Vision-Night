@@ -28,4 +28,7 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
         return false;
     }
 
-    uint8_t* o
+    uint8_t* overlayPixels;
+    if((result = AndroidBitmap_lockPixels(env, overlayBitmap,
+                    (void*)&overlayPixels)) < 0) {
+   
