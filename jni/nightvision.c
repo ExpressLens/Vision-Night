@@ -70,4 +70,10 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
     }
 
     AndroidBitmap_unlockPixels(env, edgeBitmap);
-    AndroidBitmap_unlockPixels(env, ov
+    AndroidBitmap_unlockPixels(env, overlayBitmap);
+
+    return objectDetected;
+}
+
+void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
+ 
