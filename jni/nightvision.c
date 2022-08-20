@@ -64,4 +64,10 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
                         *(overlayLine + x + i + j * overlayInfo.stride) = 255;
                     }
                 }
-                obje
+                objectDetected = true;
+            }
+        }
+    }
+
+    AndroidBitmap_unlockPixels(env, edgeBitmap);
+    AndroidBitmap_unlockPixels(env, ov
