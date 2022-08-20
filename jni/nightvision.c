@@ -76,4 +76,7 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
 }
 
 void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
- 
+        jobject thiz, jobject imageBitmap, jobject edgeBitmap) {
+    uint8_t* imagePixels;
+    int ret;
+    if((ret = AndroidBitmap_lockPi
