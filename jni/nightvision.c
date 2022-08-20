@@ -59,4 +59,6 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
             }
 
             if (gradient > OBJECT_EDGE_THRESHOLD) {
-                for(int i = 0; i <
+                for(int i = 0; i < OBJECT_DETECT_BLOCK_SIZE_X; i++) {
+                    for(int j = 0; j < OBJECT_DETECT_BLOCK_SIZE_Y; j++) {
+                        *(ov
