@@ -55,4 +55,8 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
                     if(pixel == 255) {
                         gradient++;
                     }
-             
+                }
+            }
+
+            if (gradient > OBJECT_EDGE_THRESHOLD) {
+                for(int i = 0; i <
