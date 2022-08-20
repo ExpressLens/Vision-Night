@@ -52,4 +52,7 @@ jboolean Java_com_ford_openxc_nightvision_NightVisionView_detectObjects(
             for(int i = 0; i < OBJECT_DETECT_BLOCK_SIZE_X; i++) {
                 for(int j = 0; j < OBJECT_DETECT_BLOCK_SIZE_Y; j++) {
                     uint8_t pixel = *(edgeLine + x + i + j * edgeInfo.stride);
-         
+                    if(pixel == 255) {
+                        gradient++;
+                    }
+             
