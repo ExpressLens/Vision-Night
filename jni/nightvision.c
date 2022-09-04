@@ -81,4 +81,9 @@ void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
     int ret;
     if((ret = AndroidBitmap_lockPixels(env, imageBitmap,
                     (void*)&imagePixels)) < 0) {
-        LOGE("AndroidBitmap_lockPixels() failed, error
+        LOGE("AndroidBitmap_lockPixels() failed, error=%d", ret);
+        return;
+    }
+
+    AndroidBitmapInfo imageInfo;
+    if((ret = AndroidBitmap_getInfo(env, imageBitma
