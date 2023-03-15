@@ -101,4 +101,11 @@ void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
     AndroidBitmapInfo edgeInfo;
     if((ret = AndroidBitmap_getInfo(env, edgeBitmap, &edgeInfo)) < 0) {
         LOGE("AndroidBitmap_getInfo() failed, error=%d", ret);
-        re
+        return;
+    }
+
+    int convolutionKernel[2][3][3] = {
+        {
+            {-1, 0, 1},
+            {-2, 0, 2},
+           
