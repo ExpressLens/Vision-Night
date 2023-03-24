@@ -113,4 +113,9 @@ void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
         {
             {1, 2, 1},
             {0, 0, 0},
-            {-1, -2, 
+            {-1, -2, -1}
+        }
+    };
+
+    for(int y = imageInfo.height * DETECTION_WINDOW_SIZE;
+            y < imageInfo.height * (1 - DETECTION_WIND
