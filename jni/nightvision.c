@@ -118,4 +118,6 @@ void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
     };
 
     for(int y = imageInfo.height * DETECTION_WINDOW_SIZE;
-            y < imageInfo.height * (1 - DETECTION_WIND
+            y < imageInfo.height * (1 - DETECTION_WINDOW_SIZE); y++) {
+        for(int x = edgeInfo.width * DETECTION_WINDOW_SIZE;
+                x < edgeInfo.width * (1 
