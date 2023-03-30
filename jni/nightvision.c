@@ -128,4 +128,5 @@ void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
                     argb* imageLine = (argb*)(imagePixels +
                             imageInfo.stride * (y + i));
                     uint8_t pixel = rgbToGrayscale(&imageLine[x]);
-      
+                    gradients[0] += pixel * convolutionKernel[0][i + 1][j + 1];
+                    gradients[1] += pixel * convo
