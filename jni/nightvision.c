@@ -137,4 +137,10 @@ void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
             if(gradient > 255) {
                 gradient = 255;
             } else if(gradient < 0) {
-                
+                gradient = 0;
+            }
+            *(edgePixels + x + y * edgeInfo.stride) = (uint8_t) gradient;
+        }
+    }
+
+    AndroidBi
