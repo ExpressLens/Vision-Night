@@ -133,4 +133,8 @@ void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
                 }
             }
 
-            int gradient = abs(gradients[0]) + abs(gradient
+            int gradient = abs(gradients[0]) + abs(gradients[1]);
+            if(gradient > 255) {
+                gradient = 255;
+            } else if(gradient < 0) {
+                
