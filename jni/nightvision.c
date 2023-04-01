@@ -143,4 +143,6 @@ void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
         }
     }
 
-    AndroidBi
+    AndroidBitmap_unlockPixels(env, imageBitmap);
+    AndroidBitmap_unlockPixels(env, edgeBitmap);
+}
