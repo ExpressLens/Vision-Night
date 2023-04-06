@@ -9,4 +9,7 @@
 
 #define OBJECT_DETECT_BLOCK_SIZE_X 8
 #define OBJECT_DETECT_BLOCK_SIZE_Y 8
-#define OBJ
+#define OBJECT_DETECT_BLOCK_AREA (OBJECT_DETECT_BLOCK_SIZE_X * \
+        OBJECT_DETECT_BLOCK_SIZE_Y)
+
+// The minimum number of edge pi
