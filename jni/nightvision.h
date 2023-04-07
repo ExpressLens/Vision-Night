@@ -12,4 +12,7 @@
 #define OBJECT_DETECT_BLOCK_AREA (OBJECT_DETECT_BLOCK_SIZE_X * \
         OBJECT_DETECT_BLOCK_SIZE_Y)
 
-// The minimum number of edge pi
+// The minimum number of edge pixels required to find an object
+#define OBJECT_EDGE_THRESHOLD OBJECT_DETECT_BLOCK_AREA * .4
+
+// The percentage to cut 
