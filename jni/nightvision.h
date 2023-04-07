@@ -15,4 +15,6 @@
 // The minimum number of edge pixels required to find an object
 #define OBJECT_EDGE_THRESHOLD OBJECT_DETECT_BLOCK_AREA * .4
 
-// The percentage to cut 
+// The percentage to cut off top/bottom/left/right of the image before running
+// object and edge detection
+#define DETECTION_WINDOW_SIZE
