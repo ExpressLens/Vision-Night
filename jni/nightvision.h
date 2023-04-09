@@ -17,4 +17,13 @@
 
 // The percentage to cut off top/bottom/left/right of the image before running
 // object and edge detection
-#define DETECTION_WINDOW_SIZE
+#define DETECTION_WINDOW_SIZE (.5 / 2)
+
+typedef struct {
+    uint8_t red;
+    uint8_t green;
+    uint8_t blue;
+    uint8_t alpha;
+} argb;
+
+void 
