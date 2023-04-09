@@ -26,4 +26,5 @@ typedef struct {
     uint8_t alpha;
 } argb;
 
-void 
+void Java_com_ford_openxc_nightvision_NightVisionView_detectEdges(JNIEnv* env,
+        jobject thiz, jobject bitmapcolor, jobjec
