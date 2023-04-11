@@ -5,3 +5,6 @@
         android:layout_height="fill_parent">
     <com.ford.openxc.nightvision.NightVisionView
             android:id="@+id/cp"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:
