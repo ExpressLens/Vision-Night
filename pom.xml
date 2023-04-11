@@ -58,3 +58,53 @@
                     <configuration>
                         <source>${java.version}</source>
                         <target>${java.version}</target>
+                </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <version>${android-maven.version}</version>
+                    <goals>
+                        <goal>ndk-build</goal>
+                    </goals>
+
+                    <extensions>true</extensions>
+                    <configuration>
+                        <dex>
+                            <jvmArguments>
+                                <argument>-Xms256m</argument>
+                                <argument>-Xmx1024m</argument>
+                            </jvmArguments>
+                        </dex>
+                        <sdk>
+                            <platform>${android.platform}</platform>
+                        </sdk>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>2.5</version>
+                    <configuration>
+                        <filesets>
+                            <fileset>
+                                <directory>libs</directory>
+                            </fileset>
+                            <fileset>
+                                <directory>obj</directory>
+                            </fileset>
+                        </filesets>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
