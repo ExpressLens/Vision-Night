@@ -6,4 +6,7 @@ import android.content.Intent;
 import android.util.Log;
 
 /** Receive a broadcast on device startup and start the
- * VehicleMonitoringServ
+ * VehicleMonitoringService.
+ *
+ * That service needs to be started to start watching for the transmission gear
+ * posi
