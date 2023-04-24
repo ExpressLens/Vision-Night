@@ -18,4 +18,7 @@ public class BootupReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         Intent MonitoringServiceIntent = new Intent(context,
                 VehicleMonitoringService.class);
-        context.st
+        context.startService(MonitoringServiceIntent);
+        Log.w(TAG, "Starting Service from BootupReceiver");
+    }
+}
