@@ -16,4 +16,6 @@ public class BootupReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-    
+        Intent MonitoringServiceIntent = new Intent(context,
+                VehicleMonitoringService.class);
+        context.st
