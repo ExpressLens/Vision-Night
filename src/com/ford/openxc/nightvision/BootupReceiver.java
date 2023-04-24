@@ -12,4 +12,8 @@ import android.util.Log;
  * position to change to "reverse".
 */
 public class BootupReceiver extends BroadcastReceiver {
-    private final st
+    private final static String TAG = "CameraBootupReceiver";
+
+    @Override
+    public void onReceive(final Context context, Intent intent) {
+    
