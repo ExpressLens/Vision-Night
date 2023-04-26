@@ -75,3 +75,53 @@ public class NightVisionView extends WebcamPreview {
         super(context, attrs);
         init();
     }
+
+    protected void drawOnCanvas(Canvas canvas, Bitmap videoBitmap) {
+        initializeBitmaps(videoBitmap);
+        canvas.drawColor(Color.BLACK);
+
+        if(mFrameCount == DETECT_FRAME_FREQUENCY) {
+            detectEdges(videoBitmap, mBitmapEdges);
+
+            mBitmapObjectOverlay.eraseColor(Color.TRANSPARENT);
+            boolean objectDetected = detectObjects(mBitmapEdges,
+                    mBitmapObjectOverlay);
+            if (!mObjectInPreviousFrame && objectDetected) {
+                mMediaPlayer.start();
+                mObjectInPreviousFrame = true;
+                Log.d(TAG, "Object detected");
+            } else if(mObjectInPreviousFrame && !objectDetected) {
+                mObjectInPreviousFrame = false;
+                Log.d(TAG, "Object left frame");
+            }
+
+            mFrameCount = 0;
+        } else {
+            mFrameCount++;
+        }
+
+        canvas.drawBitmap(videoBitmap, null, getViewingWindow(), null);
+        canvas.drawBitmap(mBitmapObjectOverlay, null, getViewingWindow(),
+                sOverlayPaint);
+    }
+
+    private void init() {
+        mMediaPlayer = MediaPlayer.create(getContext(), R.raw.alert);
+    }
+
+    private void initializeBitmaps(Bitmap videoBitmap) {
+        if(mBitmapEdges == null ||
+                mBitmapEdges.getWidth() != videoBitmap.getWidth() ||
+                mBitmapEdges.getHeight() != videoBitmap.getHeight()) {
+            mBitmapEdges = Bitmap.createBitmap(videoBitmap.getWidth(),
+                    videoBitmap.getHeight(), Bitmap.Config.ALPHA_8);
+        }
+
+        if(mBitmapObjectOverlay == null ||
+                mBitmapObjectOverlay.getWidth() != videoBitmap.getWidth() ||
+                mBitmapObjectOverlay.getHeight() != videoBitmap.getHeight()) {
+            mBitmapObjectOverlay = Bitmap.createBitmap(videoBitmap.getWidth(),
+                    videoBitmap.getHeight(), Bitmap.Config.ALPHA_8);
+        }
+    }
+}
